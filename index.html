@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>Webbshop</title>
+</head>
+
+<body>
+    <p>
+        <h1 class="headtitle">Webbshop</h1>
+        <br>
+        <hr>
+    </p>  
+
+    <div class="row col-lg-12" id="output"> 
+    </div>
+
+    <script src="script.js"></script> 
+
+
+    <script>
+        function reply_click(clicked_id)
+        {
+            window.localStorage.setItem('myChosenId', JSON.stringify(clicked_id));
+            location.href = "varukorg.html";
+        }
+    </script>
+    
+
+    <br><br>
+    <footer>
+        <hr>
+            <p>Copyright &copy; 2021 Nina Eriksson</p>
+            <p><a href="Nina.Eriksson@yh.nackademin.se">Nina.Eriksson@yh.nackademin.se</a></p>
+    </footer>
+</body>
+</html>

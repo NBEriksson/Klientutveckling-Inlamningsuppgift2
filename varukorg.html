@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="functions.js"></script>
+    <title>Varukorg</title>
+</head>
+
+<body>  
+    <p>   
+        <h1 class="headtitle">Min varukorg</h1>
+        <br><hr>
+        <div class="center">
+            <div class="col-lg-6 mt-2 shop-items center" id="outputItem">
+                <script>printMyItem();</script>
+            </div>        
+        </div>
+        <hr>
+    </p>  
+
+    <div class="center">
+        <form name="myForm" action="orderbekraftelse.html" method="post" onsubmit="return validateForm()">
+            <br>Namn:<br>
+            <input type="text" id="name"><br>
+            Telefon:<br>
+            <input type="text" id="phone"><br>
+            Email:<br>
+            <input type="email" id="email"><br>
+            Leveransadress:<br>
+            <input type="text" id="adress"><br>
+            <br>
+            <div class="button-space">
+                <input type="reset" value="Återställ">
+                <input class="button-submit" type="submit" value="BESTÄLL">
+            </div>
+        </form>
+    </div>
+
+    <br><br>
+    <footer>
+        <hr>
+            <p>Copyright &copy; 2021 Nina Eriksson</p>
+            <p><a href="Nina.Eriksson@yh.nackademin.se">Nina.Eriksson@yh.nackademin.se</a></p>
+    </footer>
+</body>
+</html>
